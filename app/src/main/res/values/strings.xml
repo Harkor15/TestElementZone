@@ -3,4 +3,5 @@
     <string name="email">E-mail</string>
     <string name="password">Hasło</string>
     <string name="log_in">Log in</string>
+    <string name="title_activity_list">ListActivity</string>
 </resources>
