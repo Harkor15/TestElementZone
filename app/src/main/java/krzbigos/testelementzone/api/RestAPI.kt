@@ -1,10 +1,7 @@
 package krzbigos.testelementzone.api
 
 import com.google.gson.GsonBuilder
-import krzbigos.testelementzone.model.LoginData
-import krzbigos.testelementzone.model.LoginResponse
-import krzbigos.testelementzone.model.OrdersData
-import krzbigos.testelementzone.model.OrdersResponse
+import krzbigos.testelementzone.model.*
 import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
@@ -25,6 +22,9 @@ class RestAPI {
     }
     fun getListOfOrders(body: OrdersData): Call<OrdersResponse>{
         return elementZoneApi.getListOfOrders(body)
+    }
+    fun generateInviteLink(body: GenerateData): Call<GenerateResponse>{
+        return elementZoneApi.generateInviteLink(body)
     }
 
 }

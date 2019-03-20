@@ -7,6 +7,7 @@ class OrdersResponse(
 )
 
 class SingleOrder (
+    val id: Int,
     val date: Date,
     val shop_name:String,
     val location: String,

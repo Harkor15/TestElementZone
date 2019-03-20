@@ -4,4 +4,6 @@
     <string name="password">Hasło</string>
     <string name="log_in">Log in</string>
     <string name="title_activity_list">ListActivity</string>
+    <string name="invite">zaproś</string>
+    <string name="send_to">wyślij do</string>
 </resources>

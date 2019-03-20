@@ -1,13 +1,16 @@
 package krzbigos.testelementzone.view
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import krzbigos.testelementzone.R
+import krzbigos.testelementzone.adapters.ListViewCustomAdapter
 import krzbigos.testelementzone.interfaces.CustomAdapterInterface
 import krzbigos.testelementzone.model.SingleOrder
 import krzbigos.testelementzone.services.ListViewDataGenerator
 import krzbigos.testelementzone.services.SharedPrefKey
+import kotlin.collections.ArrayList
 
 class ListActivity : AppCompatActivity(), CustomAdapterInterface {
 
@@ -20,7 +23,20 @@ class ListActivity : AppCompatActivity(), CustomAdapterInterface {
 
     override fun completeListView(listViewData: List<SingleOrder>) {
         findViewById<ListView>(R.id.list_view)
-            .adapter=ListViewCustomAdapter(applicationContext,listViewData)
+            .adapter= ListViewCustomAdapter(applicationContext, listViewData, this)
+    }
+    override fun openDetailsActivity(shopName: String,orderDate:String, orderPrice:String,
+                                     items:ArrayList<String>,orderId: Int,location:String){
+        val intent = Intent(this, OrderDetailsActivity::class.java)
+        val bundle= Bundle()
+        bundle.putInt("order_id",orderId)
+        bundle.putString("shop_name",shopName)
+        bundle.putString("order_date",orderDate)
+        bundle.putString("order_price",orderPrice)
+        bundle.putString("location",location)
+        bundle.putStringArrayList("items",items)
+        intent.putExtra("bundle",bundle)
+        startActivity(intent)
     }
 }
 

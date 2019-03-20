@@ -1,9 +1,6 @@
 package krzbigos.testelementzone.api
 
-import krzbigos.testelementzone.model.LoginData
-import krzbigos.testelementzone.model.LoginResponse
-import krzbigos.testelementzone.model.OrdersData
-import krzbigos.testelementzone.model.OrdersResponse
+import krzbigos.testelementzone.model.*
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -15,4 +12,8 @@ interface ElementZoneApi {
     @Headers("Content-Type: application/json","Accept: application/json")
     @POST("orders")
     fun getListOfOrders(@Body body: OrdersData): Call<OrdersResponse>
+
+    @Headers("Content-Type: application/json","Accept: application/json")
+    @POST("generate")
+    fun generateInviteLink(@Body body: GenerateData): Call<GenerateResponse>
 }
