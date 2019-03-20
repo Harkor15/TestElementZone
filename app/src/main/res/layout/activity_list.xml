@@ -7,4 +7,26 @@
         android:layout_height="match_parent"
         tools:context=".view.ListActivity">
 
+    <android.support.design.widget.FloatingActionButton
+            android:src="@drawable/ic_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true" app:layout_constraintBottom_toBottomOf="parent" android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginBottom="16dp"
+            android:id="@+id/add_button"/>
+    <ImageView
+            android:src="@drawable/background_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/background" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:scrollbarDefaultDelayBeforeFade="0"
+            android:scrollbarAlwaysDrawVerticalTrack="false" android:scrollbarAlwaysDrawHorizontalTrack="false"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/list_view"/>
 </android.support.constraint.ConstraintLayout>

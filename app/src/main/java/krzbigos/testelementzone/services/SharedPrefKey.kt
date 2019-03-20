@@ -1,4 +1,4 @@
-package krzbigos.testelementzone.api
+package krzbigos.testelementzone.services
 
 import android.content.Context
 

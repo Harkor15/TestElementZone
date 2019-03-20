@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import krzbigos.testelementzone.R
 import krzbigos.testelementzone.api.ResponseMenager
-import krzbigos.testelementzone.api.SharedPrefKey
+import krzbigos.testelementzone.services.SharedPrefKey
 import krzbigos.testelementzone.interfaces.LogInInterface
 
 class LogInActivity : AppCompatActivity(), LogInInterface {
@@ -35,7 +35,7 @@ class LogInActivity : AppCompatActivity(), LogInInterface {
         SharedPrefKey(applicationContext).setSharedPrefKey(key)
     }
     private fun refresh(){
-        val sharedPrefKey=SharedPrefKey(applicationContext).getSharedPrefKey()
+        val sharedPrefKey= SharedPrefKey(applicationContext).getSharedPrefKey()
         if(!sharedPrefKey.equals("0")){
             login()
         }
