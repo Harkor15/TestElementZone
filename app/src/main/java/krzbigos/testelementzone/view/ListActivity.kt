@@ -3,6 +3,9 @@ package krzbigos.testelementzone.view
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.design.widget.FloatingActionButton
+import android.view.View
+import android.widget.Button
 import android.widget.ListView
 import krzbigos.testelementzone.R
 import krzbigos.testelementzone.adapters.ListViewCustomAdapter
@@ -19,6 +22,11 @@ class ListActivity : AppCompatActivity(), CustomAdapterInterface {
         setContentView(R.layout.activity_list)
         val key= SharedPrefKey(applicationContext).getSharedPrefKey()
          ListViewDataGenerator().getListViewData(key,this)
+        val addButton=findViewById<FloatingActionButton>(R.id.add_button)
+        addButton.setOnClickListener(View.OnClickListener {
+            val intent=Intent(this,ShopDataActivity::class.java)
+            startActivity(intent)
+        })
     }
 
     override fun completeListView(listViewData: List<SingleOrder>) {

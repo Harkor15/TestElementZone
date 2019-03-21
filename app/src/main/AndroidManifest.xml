@@ -25,6 +25,10 @@
         </activity>
         <activity android:name=".view.OrderDetailsActivity">
         </activity>
+        <activity android:name=".view.ShopDataActivity">
+        </activity>
+        <activity android:name=".view.ShoppingListActivity">
+        </activity>
     </application>
 
 </manifest>
