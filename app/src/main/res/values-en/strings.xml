@@ -10,4 +10,7 @@
     <string name="amount">Amount</string>
     <string name="product">Product</string>
     <string name="commodity">commodity</string>
+    <string name="order_details">Order details</string>
+    <string name="shopping_list">Shopping list</string>
+    <string name="shop_details">Shop details</string>
 </resources>

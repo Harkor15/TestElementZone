@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
 import android.view.View
-import android.widget.Button
 import android.widget.ListView
 import krzbigos.testelementzone.R
 import krzbigos.testelementzone.adapters.ListViewCustomAdapter
@@ -15,11 +14,13 @@ import krzbigos.testelementzone.services.ListViewDataGenerator
 import krzbigos.testelementzone.services.SharedPrefKey
 import kotlin.collections.ArrayList
 
+
 class ListActivity : AppCompatActivity(), CustomAdapterInterface {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
+
         val key= SharedPrefKey(applicationContext).getSharedPrefKey()
          ListViewDataGenerator().getListViewData(key,this)
         val addButton=findViewById<FloatingActionButton>(R.id.add_button)

@@ -15,4 +15,7 @@
     <string name="amount">Kwota</string>
     <string name="product">Produkt</string>
     <string name="commodity">towar</string>
+    <string name="order_details">Dane zamówienia</string>
+    <string name="shopping_list">Lista zakupów</string>
+    <string name="shop_details">Dane sklepu</string>
 </resources>
