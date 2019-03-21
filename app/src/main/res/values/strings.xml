@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">Test Element Zone</string>
-    <string name="email">E-mail</string>
+    <string name="email" translatable="false">E-mail</string>
     <string name="password">Hasło</string>
-    <string name="log_in">Log in</string>
-    <string name="title_activity_list">ListActivity</string>
+    <string name="log_in" translatable="false">Log in</string>
+    <string name="title_activity_list" translatable="false">ListActivity</string>
     <string name="invite">zaproś</string>
     <string name="send_to">wyślij do</string>
     <string name="shop_name">Nazwa sklepu</string>
     <string name="localiasation">Lokalizacja</string>
     <string name="shopping_date">Data zakupów</string>
-    <string name="next_step">Next step</string>
-    <string name="done">done</string>
-    <string name="zl15">15 zł</string>
+    <string name="next_step" translatable="false">Next step</string>
+    <string name="done" translatable="false">done</string>
+    <string name="zl15" translatable="false">15 zł</string>
     <string name="amount">Kwota</string>
     <string name="product">Produkt</string>
     <string name="commodity">towar</string>

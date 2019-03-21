@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Test Element Zone</string>
+    <string name="password">Password</string>
+    <string name="invite">invite</string>
+    <string name="send_to">send to</string>
+    <string name="shop_name">Shop name</string>
+    <string name="localiasation">Localisation</string>
+    <string name="shopping_date">Shopping date</string>
+    <string name="amount">Amount</string>
+    <string name="product">Product</string>
+    <string name="commodity">commodity</string>
+</resources>
