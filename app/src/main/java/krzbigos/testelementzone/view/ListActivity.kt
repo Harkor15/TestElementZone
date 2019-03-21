@@ -30,8 +30,9 @@ class ListActivity : AppCompatActivity(), CustomAdapterInterface {
     }
 
     override fun completeListView(listViewData: List<SingleOrder>) {
+        val customAdapter=ListViewCustomAdapter(applicationContext, listViewData, this)
         findViewById<ListView>(R.id.list_view)
-            .adapter= ListViewCustomAdapter(applicationContext, listViewData, this)
+            .adapter= customAdapter
     }
     override fun openDetailsActivity(shopName: String,orderDate:String, orderPrice:String,
                                      items:ArrayList<String>,orderId: Int,location:String){

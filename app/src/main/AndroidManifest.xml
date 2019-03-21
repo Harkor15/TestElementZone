@@ -27,7 +27,8 @@
         </activity>
         <activity android:name=".view.ShopDataActivity">
         </activity>
-        <activity android:name=".view.ShoppingListActivity">
+        <activity android:name=".view.ShoppingListActivity"
+                  android:windowSoftInputMode="stateVisible|adjustPan">        >
         </activity>
     </application>
 
