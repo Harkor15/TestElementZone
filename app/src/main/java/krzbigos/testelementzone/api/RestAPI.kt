@@ -26,5 +26,8 @@ class RestAPI {
     fun generateInviteLink(body: GenerateData): Call<GenerateResponse>{
         return elementZoneApi.generateInviteLink(body)
     }
+    fun addOrder(body: AddOrderData):Call<AddOrderResponse>{
+        return elementZoneApi.addOrder(body)
+    }
 
 }
